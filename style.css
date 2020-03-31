@@ -1,0 +1,205 @@
+.loader-wrapper {
+    background-color: rgb(226, 217, 217);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    align-self: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid yellow;
+    width: 80px;
+    height: 80px;
+    animation: loading 2s linear infinite;
+    animation: loading 2s linear infinite;
+}
+@keyframes loading{
+    0% { transform: rotate(0deg)}
+    100%{transform: rotate(360deg);}
+}
+.loaded {
+    display:none
+}
+.navbar {
+    overflow: hidden;
+    padding-top: 0;
+}
+#nav-style:hover {
+    transform: scaleY(1.2);
+    color: red !important;
+    font-style: italic;
+}
+.nav-style:hover {
+    transform: scaleY(1.2);
+    color: white !important;
+    font-style: italic;
+    font-weight: bold;
+}
+.nav-social:hover {
+    color: yellow;
+}
+.navbar-scroll {
+    background-color: rgb(144, 250, 144);
+}
+.header {
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+    overflow: hidden;
+}
+.background-image-1 {
+    background-image: url('./photos/cars7.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: width 2s;
+    animation-name: zoomImage;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes zoomImage {
+    0% {transform: scale(1);}
+    
+    50% {transform: scale(1.1);}
+    
+    100% {transform: scale(1);}
+}
+@media only screen and (max-width: 500px) {
+    .background-image-1 {
+        background-size: cover;
+    }
+    .big-head {
+        display: flex;
+        justify-content: end;
+        color: red !important;
+    }
+    .big-car-box img{
+        width: 100%;
+        height: auto;
+    }
+    .list-box {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+.why-right {
+    transform: skewX(-20deg);
+}
+.mav-auto {
+    transform: skew(-20deg)
+}
+.round-titles {
+    height: 50px;
+    width: 50px;
+}
+hr {
+    width: 70px;
+}
+.section-3 {
+    background-color: rgb(211, 207, 207);
+}
+.model-list {
+    list-style: none;
+}
+.model-link {
+    color: rgb(48, 47, 47);
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 5px;
+    margin: 0 2px;
+}
+.model-link:hover {
+    color: white;
+    background-color: gray;
+}
+.car:hover {
+    text-decoration: none;
+}
+.the-price {
+    
+    padding: 0;
+    border-bottom: 40px solid rgb(57, 160, 230);
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    height: 0;
+    width: 120px;
+}
+.word-box {
+    background-image: url('./photos/flower.jpg');
+}
+.search-box, .sell-car {
+    opacity: 0.5;
+}
+.search-box, .sell-car p, h6{
+    filter: contrast(200%) saturate(10);
+}
+.icon:hover {
+    transform: translateY(-20px);
+}
+
+.list-group-link:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+.cars {
+    width: 250px;
+    height: 160px;
+}
+.jumbotron {
+    background-image: url(./photos/flower.jpg);
+}
+input {
+    opacity: 0.5;
+}
+.reviewer-image {
+    border: white solid 4px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -40px;
+    left: 45%;
+    right: 45%;
+    
+}
+.body-div {
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+.card-body-div {
+    background-color: rgb(247, 238, 164);
+}
+footer {
+    background-color: black;
+}
+.socials {
+    list-style: none;
+    
+}
+.social {
+    color: yellowgreen;
+}
+.social:hover {
+    color: tomato;
+    
+}
+.foot:hover {
+    transform: scale(2);
+}
+
+
